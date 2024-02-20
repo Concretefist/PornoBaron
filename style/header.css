@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #2c1a5f;
+  border: solid;
+  border-bottom-width: 2px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: rgb(255, 255, 255);
+  z-index: 1; /* das bewirkt, dass der header immer im vordergrund ist, je höher der z-index desto eher im vordergrund von anderen elementen, wenn man das nicht macht kommt es zu so komischen überlagerungen mit dem body */
+  align-items: center; /*vertikal zentrieren */
+}
+
+.left-section {
+  color: #f7f7f7;
+  text-align: center;
+  font-size: 90px;
+  font-family: "Irish Grover";
+  text-shadow: 0 0 10px #e43292;
+  margin-left: 10px;
+}
+
+.searchbar {
+  height: 40px;
+  flex: 1;
+  padding-right: 300px;
+  padding-left: 10px;
+  border: solid;
+  border-radius: 17px;
+}
+
+.searchbar::placeholder {
+  font-size: 20px;
+}
+
+.title-img {
+  height: 100px;
+}
+
+.search-button {
+  padding: 5px;
+  font-size: 20px;
+}

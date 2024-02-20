@@ -1,0 +1,37 @@
+.video-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  place-items: center center;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+  
+.video {
+  height: 250px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative; /*das braucht man später um die video time als absolutes element einzufügen, aber das funktioniert mit dem video noch nicht */
+}
+
+.video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.video:hover video {
+  transform: scale(1.05);
+}
+
+.video-tags {
+  color: rgb(10, 10, 10);
+  background-color: pink;
+  font-size: 20px;
+  font-weight: bold;
+ 
+
+}
